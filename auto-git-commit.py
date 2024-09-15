@@ -5,7 +5,7 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
 # Configura estos valores
-REPO_PATH = '/ruta/a/tu/repositorio'
+REPO_PATH = 'D:/UDEMY/algorithms and data structures'
 COMMIT_MESSAGE = 'Auto-commit: Actualización de código'
 GITHUB_REMOTE = 'origin'
 BRANCH_NAME = 'main'
