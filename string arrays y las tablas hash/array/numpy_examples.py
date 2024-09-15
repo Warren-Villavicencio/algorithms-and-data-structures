@@ -17,3 +17,19 @@ random_matrix = np.random.randint(1, 11, size=(5, 5))
 # Crear una muestra aleatoria de 100 elementos de una distribución binomial con 10 ensayos y probabilidad de éxito 0.5
 binomial_sample = np.random.binomial(n=10, p=0.5, size=100)
 
+# Nivel Básico
+# Obtener los primeros 5 elementos del array
+first_five = random_numbers[:5]
+
+# Nivel Intermedio
+# Obtener los elementos mayores a 0.5 en el array normal
+greater_than_05 = normal_distribution[normal_distribution > 0.5]
+
+# Nivel Avanzado
+# Crear una máscara para seleccionar elementos pares de la matriz
+even_mask = random_matrix % 2 == 0
+even_elements = random_matrix[even_mask]
+
+# Nivel Experto
+# Seleccionar elementos en una región específica de la matriz
+submatrix = random_matrix[1:3, 2:4]
