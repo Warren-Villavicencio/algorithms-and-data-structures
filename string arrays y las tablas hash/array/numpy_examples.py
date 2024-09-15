@@ -50,3 +50,32 @@ row_means = np.mean(random_matrix, axis=1)
 # Utilizar vectorización para operaciones eficientes
 squared_array = random_numbers**2
 
+# Nivel Básico
+# Histograma de los números aleatorios
+plt.hist(random_numbers)
+plt.title("Histograma de Números Aleatorios")
+plt.show()
+
+# Nivel Intermedio
+# Diagrama de dispersión de dos arrays
+plt.scatter(random_numbers, normal_distribution)
+plt.xlabel("Números Aleatorios")
+plt.ylabel("Distribución Normal")
+plt.show()
+
+# Nivel Avanzado
+# Gráfico de línea de una función
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+plt.plot(x, y)
+plt.title("Función Seno")
+plt.show()
+
+# Nivel Experto
+# Crear subplots para múltiples gráficos
+fig, axs = plt.subplots(2, 2)
+axs[0, 0].hist(random_numbers)
+axs[0, 1].scatter(random_numbers, normal_distribution)
+axs[1, 0].plot(x, y)
+# ... y así sucesivamente
+plt.show()
