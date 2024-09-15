@@ -49,3 +49,4 @@ row_means = np.mean(random_matrix, axis=1)
 # Nivel Experto
 # Utilizar vectorización para operaciones eficientes
 squared_array = random_numbers**2
+
