@@ -34,3 +34,18 @@ even_elements = random_matrix[even_mask]
 # Seleccionar elementos en una región específica de la matriz
 submatrix = random_matrix[1:3, 2:4]
 
+# Nivel Básico
+# Sumar 1 a todos los elementos de un array
+array_plus_one = random_numbers + 1
+
+# Nivel Intermedio
+# Multiplicar elemento a elemento dos arrays
+product_array = random_numbers * normal_distribution
+
+# Nivel Avanzado
+# Calcular la media de cada fila de una matriz
+row_means = np.mean(random_matrix, axis=1)
+
+# Nivel Experto
+# Utilizar vectorización para operaciones eficientes
+squared_array = random_numbers**2
