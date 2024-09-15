@@ -33,3 +33,4 @@ even_elements = random_matrix[even_mask]
 # Nivel Experto
 # Seleccionar elementos en una región específica de la matriz
 submatrix = random_matrix[1:3, 2:4]
+
