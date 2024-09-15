@@ -16,3 +16,4 @@ random_matrix = np.random.randint(1, 11, size=(5, 5))
 # Nivel Experto
 # Crear una muestra aleatoria de 100 elementos de una distribución binomial con 10 ensayos y probabilidad de éxito 0.5
 binomial_sample = np.random.binomial(n=10, p=0.5, size=100)
+
