@@ -9,14 +9,20 @@ REPO_PATH = '/ruta/a/tu/repositorio'
 COMMIT_MESSAGE = 'Auto-commit: Actualización de código'
 GITHUB_REMOTE = 'origin'
 BRANCH_NAME = 'main'
+IGNORED_EXTENSIONS = ['.git', '.gitignore', '.vscode', '.idea']  # Extensiones o carpetas a ignorar
 
 repo = Repo(REPO_PATH)
 
 class GitAutoCommit(FileSystemEventHandler):
     def on_modified(self, event):
-        if not event.is_directory and event.src_path.endswith('.py'):
-            print(f"Archivo modificado: {event.src_path}")
-            self.stage_commit_and_push()
+        if not event.is_directory:
+            file_path = event.src_path
+            _, file_extension = os.path.splitext(file_path)
+            
+            # Comprueba si el archivo o su extensión no están en la lista de ignorados
+            if not any(ignored in file_path for ignored in IGNORED_EXTENSIONS):
+                print(f"Archivo modificado: {file_path}")
+                self.stage_commit_and_push()
 
     def stage_commit_and_push(self):
         try:
